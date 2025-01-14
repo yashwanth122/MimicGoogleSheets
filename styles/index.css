@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-center { 
+  @apply flex justify-center items-center;
+}
+
+.action-btn { 
+  @apply flex justify-start items-center hover:bg-gray-100 p-3 rounded-lg gap-1;
+}
+
+  .loader {
+    border-top-color: #222527;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes spinner {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
